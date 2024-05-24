@@ -10,6 +10,14 @@
       id="title"
       formControlName="title"
     />
+    <div
+      class="text-danger"
+      *ngIf="
+        !productForm.get('title')?.valid && productForm.get('title')?.touched
+      "
+    >
+      Bạn chưa nhập tên
+    </div>
   </div>
 
   <div class="form-group mb-3">
@@ -21,6 +29,14 @@
       id="price"
       formControlName="price"
     />
+    <div
+      class="text-danger"
+      *ngIf="
+        !productForm.get('price')?.valid && productForm.get('price')?.touched
+      "
+    >
+      Gia phai lon hon 0
+    </div>
   </div>
 
   <div class="form-group mb-3">
