@@ -11,18 +11,22 @@
       <th>Action</th>
     </tr>
   </thead>
-  <tbody>
-    <tr *ngFor="let product of products">
-      <td>{{ product.id }}</td>
-      <td>{{ product.title }}</td>
+  <tbody *ngFor="let item of products">
+    <tr>
+      <td>{{ item.id }}</td>
+      <td>{{ item.title }}</td>
       <td>
-        <img width="300px" [src]="product.images" alt="Hình ảnh sản phẩm" />
+        <img width="300px" [src]="item.images" alt="Hình ảnh sản phẩm" />
       </td>
-      <td>{{ product.price }}</td>
-      <td>{{ product.description }}</td>
+      <td>{{ item.price }}</td>
+      <td>{{ item.description }}</td>
       <td>
-        <button class="btn btn-warning">Update</button>
-        <button class="btn btn-danger">Delete</button>
+        <button class="btn btn-warning">
+          <a [routerLink]="['/admin/product-update', item.id]">Update</a>
+        </button>
+        <button class="btn btn-danger" (click)="deleteProduct(item.id)">
+          Delete
+        </button>
       </td>
     </tr>
   </tbody>

@@ -397,33 +397,6 @@
         "creationAt": "2024-05-13T00:47:12.000Z",
         "updatedAt": "2024-05-13T00:47:12.000Z"
       }
-    },
-    {
-      "id": 21
-    },
-    {
-      "title": "123",
-      "price": 123,
-      "description": "123",
-      "id": 22
-    },
-    {
-      "title": "12345",
-      "price": 12345,
-      "description": "12345",
-      "id": 23
-    },
-    {
-      "title": "123",
-      "price": 0,
-      "description": "xinh gái",
-      "id": 24
-    },
-    {
-      "title": "1234",
-      "price": 1,
-      "description": "xinh gái",
-      "id": 25
     }
   ]
 }

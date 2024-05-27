@@ -1,3 +1,4 @@
+import { ProductUpdateComponent } from './pages/admin/product-update/product-update.component';
 import { ProductAddComponent } from './pages/admin/product-add/product-add.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { Routes } from '@angular/router';
@@ -44,6 +45,7 @@ export const routes: Routes = [
     children: [
       { path: '', component: DashboardComponent },
       { path: 'product-add', component: ProductAddComponent },
+      { path: 'product-update/:id', component: ProductUpdateComponent },
     ],
   },
   {
