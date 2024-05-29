@@ -38,7 +38,7 @@ export class ProductUpdateComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
+    const id = this.route.snapshot.params['id'];
     if (id) {
       this.productService.getProductById(id).subscribe((product) => {
         this.product = product;
@@ -58,7 +58,7 @@ export class ProductUpdateComponent implements OnInit {
       };
       // console.log(this.productForm.value);
       this.productService.updateProduct(updatedProduct).subscribe((data) => {
-        // console.log('Update successful', data);
+        console.log('Update successful', data);
         alert('Update successful');
         this.router.navigate(['/admin']);
       });

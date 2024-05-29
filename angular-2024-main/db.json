@@ -397,6 +397,45 @@
         "creationAt": "2024-05-13T00:47:12.000Z",
         "updatedAt": "2024-05-13T00:47:12.000Z"
       }
+    },
+    {
+      "title": "123",
+      "price": 1234,
+      "description": "Cơm Sầu VIP (tách múi tươi)",
+      "id": 21
+    }
+  ],
+  "users": [
+    {
+      "email": "quyennlph37238@fpt.edu.vn",
+      "password": "$2a$10$3gyO5NU4h4hRPkBZFCnWkepyMOjnD3eC3sZSjRFrEo9f5hqG0KHam",
+      "id": 1
+    },
+    {
+      "email": "quyen123@fpt.edu.vn",
+      "password": "$2a$10$eebLzxMptKOtqm01hTI0yeZT.Xy3Zw9fCQtd0tulbojqa/jyYWT1K",
+      "id": 2
+    },
+    {
+      "email": "quyen1@fpt.edu.vn",
+      "password": "$2a$10$iguriNyqdNCfU15lOLn.yeQ.tdSeWzJdWpNszC2A/aGmo8EfRAMT.",
+      "role": 1,
+      "id": 3
+    },
+    {
+      "email": "quyennlph1@fpt.edu.vn",
+      "password": "$2a$10$E6J56vHJ/lXEryd3fbYCcO82DhWACUt5Y96R4LLWTD39aF.qlN/6K",
+      "id": 4
+    },
+    {
+      "email": "donam230603@gmail.com",
+      "password": "$2a$10$y0Oe5nRbLQsT4lCTf0Sa2eOehr7jL6gRz76F3ObjVIjyf7tNog4Da",
+      "id": 5
+    },
+    {
+      "email": "taikhoan123@gmail.com",
+      "password": "$2a$10$jLKGJ2snFZOVND2Jjs8Adu3bRHH3dW1b/KMQXvLuo/30G1EQqYqoS",
+      "id": 6
     }
   ]
 }

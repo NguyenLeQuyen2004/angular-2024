@@ -1,21 +1,42 @@
+<br />
 <h1>Register</h1>
-<form (ngSubmit)="register()">
-  <div class="m-3">
-    <label for="email" class="form-control">Email:</label>
-    <input type="email" id="email" [(ngModel)]="email" required />
-  </div>
-  <div class="m-3">
-    <label for="password" class="form-control">Password:</label>
-    <input type="password" id="password" [(ngModel)]="password" required />
-  </div>
-  <div class="m-3">
-    <label for="confirmPassword" class="form-control">Confirm Password:</label>
+<form (ngSubmit)="handleSubmit()" [formGroup]="userForm">
+  <div class="form-group mb-3">
+    <label for="email">Email</label>
     <input
-      type="password"
-      id="confirmPassword"
-      [(ngModel)]="confirmPassword"
-      required
+      class="form-control"
+      type="email"
+      placeholder="email"
+      id="email"
+      formControlName="email"
     />
+    <div
+      class="text-danger"
+      *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched"
+    >
+      Bạn chưa nhập email
+    </div>
   </div>
-  <button class="btn btn-primary" type="submit">Register</button>
+
+  <div class="form-group mb-3">
+    <label for="password">Password</label>
+    <input
+      class="form-control"
+      type="password"
+      placeholder="password"
+      id="password"
+      formControlName="password"
+    />
+    <div
+      class="text-danger"
+      *ngIf="
+        userForm.get('password')?.invalid && userForm.get('password')?.touched
+      "
+    >
+      Bạn chưa nhập password
+    </div>
+  </div>
+  <div class="form-group mb-3">
+    <button class="btn btn-primary w-100" type="submit">Submit</button>
+  </div>
 </form>
