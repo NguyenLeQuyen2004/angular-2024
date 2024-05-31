@@ -47,17 +47,31 @@ export class LoginComponent implements OnInit {
       const email = this.email?.value;
       const password = this.password?.value;
       const user = { email, password };
-      this.userService.login(user).subscribe(
-        (data) => {
-          console.log('Login successful', data);
-          // localStorage.setItem('token', data.token);
-          alert('Login success, Switch to Admin Page');
-          this.router.navigate(['/admin']);
+
+      this.userService.login(user).subscribe({
+        next: (data: any) => {
+          const token = data.accessToken;
+          const role = data.user?.role; // sd ? để tránh data k tồn tại
+
+          localStorage.setItem('authToken', token);
+          localStorage.setItem('userRole', role?.toString() || ''); // || để role không được đặt giá trị undefined
+
+          console.log('Đăng nhập thành công:', data);
+          alert('Đăng nhập thành công');
+          if (role === 1) {
+            this.router.navigate(['/admin']);
+          } else {
+            this.router.navigate(['/home']);
+          }
         },
-        (error) => {
-          console.log('Failed', error);
-        }
-      );
+        error: (err) => {
+          alert('Tài khoản hoặc mật khẩu không đúng');
+          console.error('Đăng nhập thất bại:', err);
+        },
+      });
+    } else {
+      alert('form không hợp lệ!');
+      console.log('form không hợp lệ!');
     }
   }
 }

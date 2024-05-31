@@ -443,9 +443,14 @@
       "id": 7
     },
     {
-      "email": "taikhoan1@gmail.com",
-      "password": "$2a$10$5eRggc24CcGHe8rNy5VRcef0OPkkeKpgEv.TxnvAFwquDkVvZntDu",
+      "email": "quyennlph37238@fpt",
+      "password": "$2a$10$cVQYQ98k1wT6Bvc0BQJUw.bXBZcXBwLkIjcaWPRIoqplVPgA9o7ge",
       "id": 8
+    },
+    {
+      "email": "quyennlph12@fpt.edu.vn",
+      "password": "$2a$10$0dr/FD/qPw/R4yfBgqqbsOK5wswFjVuH6XN8J1LIUYikqdibWF0jO",
+      "id": 9
     }
   ]
 }
