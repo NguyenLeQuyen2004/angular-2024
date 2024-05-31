@@ -51,6 +51,7 @@ export class LoginComponent implements OnInit {
         (data) => {
           console.log('Login successful', data);
           // localStorage.setItem('token', data.token);
+          alert('Login success, Switch to Admin Page');
           this.router.navigate(['/admin']);
         },
         (error) => {

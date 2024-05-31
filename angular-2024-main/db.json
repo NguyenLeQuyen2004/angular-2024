@@ -436,6 +436,16 @@
       "email": "taikhoan123@gmail.com",
       "password": "$2a$10$jLKGJ2snFZOVND2Jjs8Adu3bRHH3dW1b/KMQXvLuo/30G1EQqYqoS",
       "id": 6
+    },
+    {
+      "email": "taikhoan321@gmail.com",
+      "password": "$2a$10$HVxrM96FI5eRXfRCxtnyOusO6fRR.ttiME99.p5.xNQmXXXwguQe.",
+      "id": 7
+    },
+    {
+      "email": "taikhoan1@gmail.com",
+      "password": "$2a$10$5eRggc24CcGHe8rNy5VRcef0OPkkeKpgEv.TxnvAFwquDkVvZntDu",
+      "id": 8
     }
   ]
 }

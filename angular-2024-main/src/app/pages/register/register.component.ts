@@ -34,7 +34,6 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-
   get email() {
     return this.userForm.get('email');
   }
@@ -44,12 +43,23 @@ export class RegisterComponent implements OnInit {
   }
 
   handleSubmit() {
+    console.log(this.userForm.valid);
     if (this.userForm.valid) {
-      this.userService.register(this.userForm.value).subscribe((data) => {
-        console.log('Register successful', data);
-        alert('Register success, Switch to Login');
-        this.router.navigate(['/login']);
+      console.log(this.userForm.value);
+      this.userService.register(this.userForm.value).subscribe({
+        next: (data) => {
+          console.log('Register successfully!', data);
+          if (confirm('Register successfully!')) {
+            this.router.navigate(['/login']);
+          }
+        },
+        error: (err) => {
+          console.log('Register failed!', err);
+          alert(`Register failed!, ${err.error}`);
+        },
       });
+    } else {
+      console.log('form is not valid!');
     }
   }
 }
