@@ -11,6 +11,7 @@ import { LayoutAdminComponent } from './components/layout-admin/layout-admin.com
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { LayoutClientComponent } from './components/layout-client/layout-client.component';
 import { RoleGuardService } from './role-guard.service';
+import { ListUserComponent } from './pages/admin/list-user/list-user.component';
 
 export const routes: Routes = [
   {
@@ -51,6 +52,7 @@ export const routes: Routes = [
       { path: '', component: DashboardComponent },
       { path: 'product-add', component: ProductAddComponent },
       { path: 'product-update/:id', component: ProductUpdateComponent },
+      { path: 'list-users', component: ListUserComponent },
     ],
   },
   {

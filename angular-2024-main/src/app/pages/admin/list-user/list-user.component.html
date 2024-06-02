@@ -1,0 +1,24 @@
+<br />
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let user of users">
+    <tr>
+      <td>{{ user.id }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.password }}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteUser(user.id)">
+          Delete
+        </button>
+        <button class="btn btn-warning">Update</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

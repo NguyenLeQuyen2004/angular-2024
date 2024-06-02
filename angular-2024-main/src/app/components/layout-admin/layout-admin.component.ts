@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
 
 @Component({
@@ -9,4 +9,13 @@ import { FooterComponent } from '../footer/footer.component';
   templateUrl: './layout-admin.component.html',
   styleUrl: './layout-admin.component.scss',
 })
-export class LayoutAdminComponent {}
+export class LayoutAdminComponent implements OnInit {
+  ngOnInit(): void {}
+  constructor(private router: Router) {}
+  logout() {
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('userRole');
+    alert('Logout successfull');
+    this.router.navigate(['/']);
+  }
+}

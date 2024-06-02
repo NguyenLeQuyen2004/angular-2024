@@ -53,11 +53,11 @@ export class LoginComponent implements OnInit {
           const token = data.accessToken;
           const role = data.user?.role; // sd ? để tránh data k tồn tại
 
-          localStorage.setItem('authToken', token);
+          localStorage.setItem('accessToken', token);
           localStorage.setItem('userRole', role?.toString() || ''); // || để role không được đặt giá trị undefined
 
           console.log('Đăng nhập thành công:', data);
-          alert('Đăng nhập thành công');
+          alert('Login successfull');
           if (role === 1) {
             this.router.navigate(['/admin']);
           } else {
