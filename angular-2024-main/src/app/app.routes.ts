@@ -12,6 +12,8 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { LayoutClientComponent } from './components/layout-client/layout-client.component';
 import { RoleGuardService } from './role-guard.service';
 import { ListUserComponent } from './pages/admin/list-user/list-user.component';
+import { UserAddComponent } from './pages/admin/user-add/user-add.component';
+import { UpdateUserComponent } from './pages/admin/update-user/update-user.component';
 
 export const routes: Routes = [
   {
@@ -53,6 +55,8 @@ export const routes: Routes = [
       { path: 'product-add', component: ProductAddComponent },
       { path: 'product-update/:id', component: ProductUpdateComponent },
       { path: 'list-users', component: ListUserComponent },
+      { path: 'add-user', component: UserAddComponent },
+      { path: 'update-user/:id', component: UpdateUserComponent },
     ],
   },
   {

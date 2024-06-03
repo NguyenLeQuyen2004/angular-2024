@@ -418,9 +418,29 @@
       "id": 2
     },
     {
-      "email": "taikhoan555@gmail.com",
-      "password": "$2a$10$gIWfLJsOsmvh7zDr/YymTum2q1yBN9VKFQcVtbCIqIK581S7OzqYq",
+      "email": "taikhoan123@gmail.com",
+      "password": "$2a$10$GYUDiWG8KLDZ0NU8m4vO4eJjTIgrh/T72rHb7xW.a74uZs/i8mB3C",
       "id": 3
+    },
+    {
+      "email": "taikhoan555@gmail.com",
+      "password": "$2a$10$JPcQQbshKb/XjUHzuMrJPejIYFx1nJAqTgiIilPvRlqc71hwgf8Se",
+      "id": 4
+    },
+    {
+      "email": "Nam123@gmail.com",
+      "password": "$2a$10$IQYk3fy4V.huSo7Te3scyujOdTfBRU1L3hNQcccrkQhQr1gRE3lWC",
+      "id": 5
+    },
+    {
+      "email": "taikhoan321@gmail.com",
+      "password": "$2a$10$Z9XRe3obn0w6h1dK3L23VuRl4aNviX1/jX5x3jj.JSMOn0tfS1VZ6",
+      "id": 6
+    },
+    {
+      "email": "taikhoan55@gmail.com",
+      "password": "$2a$10$jhBpKMl4QVTGxXiKIDygOO78j4BoocWJp2KmhdCtYQTmbB5HhLtui",
+      "id": 7
     }
   ]
 }

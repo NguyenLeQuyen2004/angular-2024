@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../../../interfaces/User';
 import { UserService } from '../../../user.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-list-user',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './list-user.component.html',
   styleUrl: './list-user.component.scss',
 })
